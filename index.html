@@ -4,7 +4,118 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>rsschool-cv-html</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <title>cv</title>
 </head>
-<body></body>
+<body>
+  <header class="container">
+    <nav class="nav">
+      <ul class="nav-list">
+        <li><a href="#contacts" class="nav-link">contacts</a></li>
+        <li><a href="#summary" class="nav-link">summary</a></li>
+        <li><a href="#skills" class="nav-link">skills</a></li>
+        <li><a href="#code" class="nav-link">code</a></li>
+        <li><a href="#projects" class="nav-link">projects</a></li>
+        <li><a href="#education" class="nav-link">education</a></li>
+        <li><a href="#english" class="nav-link">english</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main class="container">
+    <section class="profile">
+      <img src="assets/avatar.jpg" alt="logo" class="profile-img">
+      <h1 class="title-h1">Денис Фомин, Frontend разработчик</h1>
+    </section>
+    <section id="contacts" class="contacts">
+      <h2 class="title-h2">Contacts</h2>
+      <ul class="contacts-list">
+        <li class="contacts-item">telegram:
+          <a href="https://t.me/gmmmmd" class="contacts-link">@gmmmmd</a>
+        </li>
+        <li class="contacts-item">email:
+          <a href="mailto:denis.fomin.frontend@yandex.ru" class="contacts-link">denis.fomin.frontend@yandex.ru</a>
+        </li>
+        <li class="contacts-item">github:
+          <a href="https://github.com/gmmmmd" class="contacts-link" target="_blank">github.com/gmmmmd</a>
+        </li>
+      </ul>
+    </section>
+    <section id="summary" class="summary">
+      <h2 class="title-h2">Summary</h2>
+      <p class="summary-description">
+        Frontend разработчик. Верстаю адаптивно, кроссбраузерно, семантично. Оживляю с помощью
+        анимаций на CSS/SASS. Добавляю функционал с помощью JavaScript. Spa приложения создаю на
+        React.
+      </p>
+    </section>
+    <section id="skills" class="skills">
+      <h2 class="title-h2">Skills</h2>
+      <p class="skills-description">
+        React/JavaScript, HTML, CSS/SCSS, Flexbox, CSS Grid, Jinja, Figma, Linux, Git, English(A1),
+        Russian(native)
+      </p>
+    </section>
+    <section id="code" class="code">
+      <h2 class="title-h2">Code</h2>
+      <pre class="code-pre">
+        <code class="code-code">
+          const multiply = (a, b) => a * b;
+        </code>
+      </pre>
+    </section>
+    <section id="projects" class="projects">
+      <h2 class="title-h2">Projects</h2>
+      <ul class="projects-list">
+        <li><a href="https://github-indol.vercel.app/" target="_blank" class="projects-link">github-userslist-app</a>
+        </li>
+        <li><a href="https://todoapp-pied.vercel.app/" target="_blank" class="projects-link">todo-app</a></li>
+        <li><a href="https://gmmmmd.github.io/" target="_blank" class="projects-link">e-commerce-store</a></li>
+      </ul>
+    </section>
+    <section id="education" class="education">
+      <h2 class="title-h2">Education</h2>
+      <div class="education-inner-wrapper">
+        <article>
+          <h3 class="title-h3">KTS Metaclass, React разработчик</h3>
+          <span>Август 2022 ‑ Сентябрь 2022</span>
+          <ul>
+            <li>Изучил React, основы и архитектурные подходы, оптимизацию и управление состоянием с помощью
+              менеджера состояния.</li>
+            <li>Изучил базовую типизацию с помощью TypeScript.</li>
+            <li>React • MobX • TypeScript.</li>
+          </ul>
+        </article>
+        <article>
+          <h3 class="title-h3">Direct Line Academy, Frontend разработчик</h3>
+          <span>Апрель 2021 ‑ Ноябрь 2021</span>
+          <ul>
+            <li>Научился адаптивно и кроссбраузерно верстать на HTML, CSS, не забывая о семантике, добавлять
+              функционал с помощью JavaScript,работе в Git и Figma.</li>
+            <li>JavaScript • HTML • CSS • Sass • Адаптивная верстка • Кроссбраузерная верстка • Семантическая
+              верстка.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+    <section id="english" class="english">
+      <h2>English</h2>
+      <span>А1 – начальный</span>
+    </section>
+  </main>
+  <footer class="container">
+    <div class="footer">
+      <div class="footer-wrapper">
+        <span>© 2022</span>
+        <a href="https://github.com/gmmmmd" target="_blank" class="footer-link">gmmmmd</a>
+      </div>
+      <a href="https://rs.school/js/" target="_blank" class="footer-rs-link">
+        <img src="assets/rs_school_js.svg" alt="rs school">
+      </a>
+    </div>
+  </footer>
+</body>
 </html>
